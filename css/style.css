@@ -1,0 +1,1144 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeue/HelveticaNeueCyr-Bold.wof2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 120%;
+  font-weight: normal;
+  color: #0D0D0D;
+  background-color: #F2F2F2; }
+
+.button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 120%;
+  font-style: normal;
+  color: #fff;
+  background: #CC242A;
+  padding: 18px 0;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center; }
+  .button:hover {
+    transform: scale(1.03); }
+  .button--back {
+    background: rgba(50, 92, 146, 0.2);
+    color: #0D0D0D; }
+  .button--effect {
+    position: relative;
+    overflow: hidden; }
+    .button--effect:hover {
+      transform: none; }
+    .button--effect::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 200%;
+      transform: translateY(-50%);
+      background: linear-gradient(to right top, transparent 29%, rgba(255, 255, 255, 0.8) 29% 32%, transparent 32% 35%, rgba(255, 255, 255, 0.8) 35% 40%, transparent 42% 45%, rgba(67, 66, 66, 0.7) 45% 55%, transparent 55% 58%, rgba(255, 255, 255, 0.8) 58% 61%, transparent 61%);
+      opacity: 0.3;
+      left: 0;
+      top: 0;
+      transition: 0.8s;
+      z-index: 3;
+      -webkit-animation: toRight 6s infinite;
+      animation: toRight 6s infinite; }
+
+.input {
+  width: 100%;
+  padding: 28px 40px;
+  border: 1px solid #111419;
+  background: rgba(128, 128, 128, 0.16);
+  color: rgba(103, 103, 103, 0.4);
+  font-family: 'OpenSans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px; }
+  .input:focus {
+    outline: none; }
+
+@-webkit-keyframes toRight {
+  0% {
+    left: -100%; }
+  85% {
+    left: -100%; }
+  100% {
+    left: 100%; } }
+
+@keyframes toRight {
+  0% {
+    left: -100%; }
+  85% {
+    left: -100%; }
+  100% {
+    left: 100%; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.section {
+  max-width: 1920px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px; }
+  .section__title {
+    font-family: 'HelveticaNeue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+    text-align: center;
+    margin: auto; }
+
+.container {
+  max-width: 1620px;
+  margin: auto; }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.header {
+  background: #325C92;
+  color: #fff;
+  padding-top: 13px;
+  padding-bottom: 13px; }
+  .header__logo {
+    font-family: 'HelveticaNeue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%; }
+  .header__button {
+    background: #0065B1;
+    width: 278px; }
+  .header__img {
+    display: none; }
+
+.main {
+  padding-bottom: 60px;
+  height: calc( 100vh - 86px);
+  min-height: 700px;
+  max-height: 1000px; }
+  .main__img {
+    display: none; }
+  .main__button {
+    width: 250px;
+    background: url(../img/main/arrow.png) no-repeat calc( 100% - 42px) center, #CC242A;
+    text-align: left;
+    padding-left: 42px; }
+  .main__text {
+    font-size: 20px;
+    line-height: 115%;
+    margin-bottom: 20px; }
+  .main__title {
+    font-size: 43px;
+    line-height: 111%;
+    margin-bottom: 40px; }
+    .main__title span {
+      text-transform: uppercase;
+      color: #0065B1; }
+  .main__container {
+    padding-left: 60px;
+    height: 100%;
+    background: url(../img/main/img.png) no-repeat right top;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+.advantages__row {
+  flex-wrap: wrap; }
+
+.advantages__card {
+  margin: 10px 15px; }
+  .advantages__card__text {
+    font-size: 20px;
+    line-height: 23px; }
+  .advantages__card__img {
+    margin-right: 15px; }
+
+.advantages__title {
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 15px;
+  padding-left: 15px; }
+
+.advantages__container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1350px;
+  margin-left: -15px; }
+
+.quiz {
+  padding-bottom: 60px;
+  height: calc( 100vh - 86px);
+  min-height: 750px;
+  max-height: 1200px;
+  overflow: hidden; }
+  .quiz__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1; }
+  .quiz__button-group {
+    justify-content: flex-start; }
+  .quiz__button {
+    width: 233px;
+    margin-right: 20px; }
+    .quiz__button:last-of-type {
+      margin-right: 0; }
+  .quiz__wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2; }
+  .quiz__title {
+    max-width: 887px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 60px; }
+  .quiz__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 360px);
+    grid-gap: 20px;
+    max-width: 740px; }
+  .quiz__radio {
+    display: none; }
+    .quiz__radio:checked + .quiz__label__text {
+      background: #0065B1;
+      color: #fff; }
+  .quiz__input-group {
+    width: 360px;
+    height: 60px; }
+  .quiz__label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer; }
+    .quiz__label__text {
+      width: 100%;
+      height: 100%;
+      background: #FFFFFF;
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px; }
+  .quiz__container {
+    position: relative;
+    padding-left: 60px;
+    height: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+.last {
+  padding-top: 115px;
+  padding-bottom: 45px; }
+  .last__input-group {
+    width: 100%;
+    margin-bottom: 20px; }
+  .last__input {
+    width: 100%;
+    font-size: 16px;
+    line-height: 120%;
+    color: rgba(13, 13, 13, 0.4);
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    padding: 20px; }
+    .last__input:focus {
+      outline: none; }
+  .last__form {
+    background: #CC242A;
+    border-radius: 16px;
+    padding: 88px 50px 140px; }
+    .last__form__button {
+      width: 100%;
+      background: #fff;
+      color: #111419; }
+    .last__form__title {
+      font-family: 'HelveticaNeue', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 120%;
+      text-align: center;
+      color: #FFFFFF;
+      max-width: 425px;
+      margin: auto;
+      margin-bottom: 80px; }
+  .last__button {
+    width: 230px; }
+  .last__title {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 70px;
+    max-width: 600px;
+    line-height: 110%; }
+  .last__card-box {
+    justify-content: flex-start;
+    margin-bottom: 75px; }
+  .last__card {
+    margin-right: 35px; }
+    .last__card:last-of-type {
+      margin-right: 0;
+      margin-bottom: 0; }
+    .last__card__text-box {
+      margin-left: 8px; }
+    .last__card__title {
+      font-family: 'HelveticaNeue', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 120%; }
+    .last__card__text {
+      font-size: 10px;
+      line-height: 100%; }
+  .last__container {
+    padding-left: 60px;
+    height: 100%;
+    background: url(../img/last/img.png) no-repeat right top;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 165px;
+    position: relative; }
+
+.thanks {
+  padding-top: 135px;
+  padding-bottom: 30px; }
+  .thanks__row {
+    align-items: flex-start; }
+  .thanks__footer {
+    padding: 12px 0 0 12px;
+    border-left: 2px solid #0065B1; }
+  .thanks__wysiwyg h4, .thanks__wysiwyg h5 {
+    font-family: 'HelveticaNeue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%; }
+  .thanks__wysiwyg p {
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 20px; }
+  .thanks__wysiwyg h5 {
+    margin-bottom: 25px; }
+  .thanks__container {
+    max-width: 1325px;
+    position: relative; }
+  .thanks__header {
+    margin-bottom: 35px;
+    justify-content: flex-start; }
+    .thanks__header img {
+      margin-right: 20px; }
+  .thanks__title {
+    font-family: 'HelveticaNeue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%; }
+  .thanks__ava {
+    width: 100%;
+    max-width: 326px;
+    margin-right: 40px; }
+    .thanks__ava__photo {
+      width: 273px;
+      height: 273px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 5px;
+      margin-bottom: 25px; }
+    .thanks__ava__name {
+      font-family: 'HelveticaNeue', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 120%; }
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 199;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: auto;
+  transition: 0.3s;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  transition: 0.3s; }
+  .modal--active {
+    opacity: 1;
+    visibility: visible; }
+  .modal-main__dialog {
+    width: 100%;
+    max-width: 940px;
+    background: #CC242A;
+    border-radius: 5px;
+    padding: 30px 200px 90px;
+    position: relative;
+    color: #fff; }
+  .modal-main__logo {
+    font-family: 'HelveticaNeue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    max-width: 270px;
+    margin: auto;
+    font-size: 24px;
+    margin-bottom: 84px; }
+  .modal-main__title {
+    font-family: 'HelveticaNeue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 34px; }
+  .modal-main__input-group {
+    width: 100%;
+    margin-bottom: 20px; }
+  .modal-main__button {
+    background: #FFFFFF;
+    border-radius: 5px;
+    color: #0D0D0D;
+    width: 100%; }
+  .modal-main__input {
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    padding: 20px; }
+    .modal-main__input:focus {
+      outline: none; }
+  .modal-main__close {
+    position: absolute;
+    top: 30px;
+    right: 30px; }
+  .modal-thanks__dialog {
+    position: relative;
+    background: #CC242A;
+    box-shadow: 0px 48px 50px -40px rgba(45, 31, 97, 0.5);
+    border-radius: 5px;
+    padding: 168px 108px 238px;
+    color: #fff;
+    text-align: center; }
+  .modal-thanks__img {
+    margin-bottom: 35px; }
+  .modal-thanks__title {
+    font-family: 'HelveticaNeue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+    margin-bottom: 35px; }
+  .modal-thanks__close {
+    position: absolute;
+    top: 30px;
+    right: 25px; }
+  .modal-thanksQ__dialog {
+    position: relative;
+    background: #CC242A;
+    box-shadow: 0px 48px 50px -40px rgba(45, 31, 97, 0.5);
+    border-radius: 5px;
+    padding: 160px 90px 215px;
+    color: #fff;
+    text-align: center; }
+  .modal-thanksQ__img {
+    margin-bottom: 35px; }
+  .modal-thanksQ__title {
+    font-family: 'HelveticaNeue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+    margin-bottom: 35px; }
+  .modal-thanksQ__close {
+    position: absolute;
+    top: 30px;
+    right: 25px; }
+
+@media screen and (max-width: 1660px) {
+  .quiz__container {
+    padding-left: 0; }
+  .advantages__row {
+    justify-content: flex-start; }
+  .main__container {
+    padding-left: 0; } }
+
+@media screen and (max-width: 1500px) {
+  .last__container {
+    padding-left: 0;
+    padding-right: 80px; }
+  .main {
+    max-height: 900px;
+    min-height: 650px; }
+    .main__container {
+      padding-top: 150px; } }
+
+@media screen and (max-width: 1400px) {
+  .quiz__title {
+    font-size: 30px;
+    max-width: 735px;
+    margin-bottom: 45px; }
+  .quiz__img {
+    width: 600px; }
+  .main {
+    max-height: 800px;
+    min-height: 650px;
+    padding-bottom: 30px; }
+    .main__container {
+      padding-top: 100px;
+      background: url(../img/main/img.png) no-repeat right top/650px; } }
+
+@media screen and (max-width: 1300px) {
+  .last__container {
+    padding-right: 40px; } }
+
+@media screen and (max-width: 1200px) {
+  .thanks {
+    padding-top: 60px; }
+  .last {
+    padding-top: 60px; }
+    .last__container {
+      padding-right: 0px; }
+    .last__form {
+      padding: 80px 30px; }
+    .last__title {
+      font-size: 32px;
+      max-width: 530px; }
+  .quiz {
+    min-height: 690px; }
+    .quiz__container {
+      padding-top: 40px; }
+    .quiz__img {
+      width: 500px;
+      top: 50px;
+      right: -100px; }
+  .main__container {
+    background: url(../img/main/img.png) no-repeat right top/550px; }
+  .main__text {
+    font-size: 18px; }
+  .main__title {
+    font-size: 33px;
+    margin-bottom: 30px; } }
+
+@media screen and (max-width: 1100px) {
+  .last__card {
+    margin-right: 20px; }
+  .last__form {
+    width: 100%;
+    max-width: 420px; } }
+
+@media screen and (max-width: 991px) {
+  .modal-thanks__close {
+    width: 24px; }
+  .modal-thanks__dialog {
+    padding: 110px 40px 155px; }
+  .modal-thanks__img {
+    margin-bottom: 20px;
+    width: 70px; }
+  .modal-thanks__title {
+    margin-bottom: 20px;
+    font-size: 23px; }
+  .modal-thanks__text {
+    font-size: 16px; }
+  .modal-thanksQ__close {
+    width: 24px; }
+  .modal-thanksQ__dialog {
+    padding: 100px 30px 120px; }
+  .modal-thanksQ__img {
+    margin-bottom: 20px;
+    width: 70px; }
+  .modal-thanksQ__title {
+    margin-bottom: 20px;
+    font-size: 23px; }
+  .modal-thanksQ__text {
+    font-size: 16px; }
+  .modal-main__dialog {
+    max-width: 375px;
+    padding: 105px 18px; }
+  .modal-main__close {
+    width: 24px;
+    height: 24px;
+    top: 30px;
+    right: 25px; }
+  .modal-main__logo {
+    display: none; }
+  .modal-main__title {
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 190px; }
+  .modal-main__input-group {
+    margin-bottom: 10px; }
+  .thanks {
+    padding-top: 55px;
+    text-align: center; }
+    .thanks__footer {
+      border: none;
+      padding: 0; }
+      .thanks__footer p {
+        font-size: 16px !important; }
+    .thanks__wysiwyg h5 {
+      font-size: 18px;
+      margin-bottom: 15px; }
+    .thanks__wysiwyg h4 {
+      font-size: 14px;
+      margin-bottom: 10px; }
+    .thanks__wysiwyg p {
+      font-size: 14px; }
+    .thanks__row {
+      flex-direction: column;
+      align-items: center; }
+    .thanks__ava {
+      margin-right: 0;
+      margin-bottom: 30px; }
+      .thanks__ava__photo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px; }
+      .thanks__ava__name {
+        font-size: 18px;
+        margin-bottom: 5px; }
+      .thanks__ava__text {
+        font-size: 16px; }
+    .thanks__container {
+      padding-top: 125px; }
+    .thanks__header {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      flex-direction: column;
+      margin-bottom: 0; }
+      .thanks__header img {
+        margin-right: 0;
+        margin-bottom: 15px; }
+    .thanks__title {
+      font-size: 23px; }
+  .last {
+    padding-top: 40px;
+    padding-bottom: 70px; }
+    .last__button {
+      font-size: 18px;
+      display: block;
+      margin: auto; }
+    .last__card-box {
+      margin-bottom: 40px; }
+    .last__box {
+      margin: auto; }
+    .last__title {
+      font-size: 23px;
+      text-align: center;
+      margin-bottom: 545px; }
+    .last__form {
+      position: absolute;
+      left: 50%;
+      bottom: 230px;
+      transform: translateX(-50%);
+      padding: 60px 10px;
+      max-width: 320px;
+      border-radius: 5px; }
+      .last__form__button {
+        font-size: 18px; }
+      .last__form__title {
+        font-size: 18px;
+        margin-bottom: 40px; }
+    .last__inpu-group {
+      margin-bottom: 15px; }
+    .last__input {
+      font-size: 16px;
+      padding: 18px 15px; }
+  .quiz {
+    height: auto;
+    min-height: 0px;
+    max-height: none;
+    padding-bottom: 20px; }
+    .quiz__img {
+      right: -150px; }
+    .quiz__button {
+      font-size: 18px; }
+    .quiz__box {
+      grid-template-columns: repeat(auto-fill, 300px);
+      margin-bottom: 40px; }
+    .quiz__title {
+      font-size: 23px;
+      margin-bottom: 30px;
+      max-width: 570px; }
+    .quiz__input-group {
+      width: 300px;
+      height: 55px; }
+    .quiz__label__text {
+      font-size: 16px; }
+  .advantages__container {
+    margin-left: -10px; }
+  .advantages__title {
+    font-size: 18px;
+    padding-left: 10px; }
+  .advantages__card {
+    margin: 10px; }
+    .advantages__card__img {
+      margin-right: 13px; }
+    .advantages__card__text {
+      font-size: 18px; }
+  .main {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    padding-bottom: 10px; }
+    .main__text {
+      max-width: 390px; }
+    .main__title {
+      font-size: 24px;
+      margin-bottom: 20px; }
+    .main__container {
+      padding-top: 80px;
+      background: url(../img/main/imgС.png) no-repeat right top; }
+    .main__box {
+      margin-bottom: 50px; }
+  .header__button {
+    font-size: 16px;
+    width: 240px; }
+  .header__logo {
+    font-size: 20px; } }
+
+@media screen and (max-width: 767px) {
+  .quiz__title {
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 450px; }
+  .quiz__button-group {
+    justify-content: center; }
+  .quiz__button {
+    width: 145px;
+    margin-right: 10px; }
+  .quiz__img {
+    display: none; }
+  .quiz__box {
+    max-width: 300px;
+    grid-gap: 10px;
+    margin: auto;
+    margin-bottom: 40px; }
+  .advantages__title {
+    padding: 0; }
+  .advantages__row {
+    align-items: flex-start;
+    flex-direction: column; }
+  .advantages__card {
+    margin: 10px 0; }
+    .advantages__card--2 br {
+      display: none; }
+  .advantages__container {
+    margin: 0;
+    max-width: 280px;
+    margin: auto; }
+  .main__title {
+    margin-bottom: 0; }
+  .main__img {
+    display: block;
+    margin: auto; }
+  .main__container {
+    background: none;
+    padding-top: 40px; }
+  .main__text {
+    margin: auto;
+    margin-bottom: 15px; }
+  .main__box {
+    text-align: center; }
+  .header__button {
+    display: none; }
+  .header__logo {
+    font-size: 16px; }
+  .header__img {
+    display: block; } }
+
+@media screen and (max-width: 575px) {
+  .section {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .last {
+    padding-left: 0;
+    padding-right: 0; }
+    .last__title {
+      padding: 0 10px; }
+    .last__container {
+      background: none; }
+    .last__form {
+      bottom: 325px; }
+    .last__card-box {
+      max-width: 230px;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: flex-start;
+      flex-direction: column; }
+    .last__card {
+      margin: 0;
+      margin-bottom: 30px; } }

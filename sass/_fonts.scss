@@ -1,0 +1,32 @@
+//HelveticaNeue
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src:
+    url('../fonts/HelveticaNeue/HelveticaNeueCyr-Bold.woff') format('woff'),
+    url('../fonts/HelveticaNeue/HelveticaNeueCyr-Bold.wof2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+//Roboto
+
+@font-face {
+    font-family: 'Roboto';
+    src:
+    url('../fonts/Roboto/Roboto-Bold.woff') format('woff'),
+    url('../fonts/Roboto/Roboto-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:
+    url('../fonts/Roboto/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
